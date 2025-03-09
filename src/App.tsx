@@ -122,23 +122,6 @@ const JobCard: React.FC<{ job: JobProps }> = ({ job }) => {
   );
 };
 
-const JobList: React.FC = () => {
-  return (
-    <div style={{ maxWidth: "600px", margin: "40px auto", padding: "20px" }}>
-      <h1
-        style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "16px" }}
-      >
-        Job Listings
-      </h1>
-      {jobs.length > 0 ? (
-        jobs.map((job) => <JobCard key={job.id} job={job} />)
-      ) : (
-        <p style={{ color: "#777" }}>No jobs available at the moment.</p>
-      )}
-    </div>
-  );
-};
-
 const App: React.FC = () => {
   return (
     <div>
@@ -151,6 +134,15 @@ const App: React.FC = () => {
       >
         Welcome to Teems Joblisting
       </h1>
+      <p
+        style={{
+          fontSize: "16px",
+          fontWeight: "light",
+          margin: "5%",
+        }}
+      >
+        Here you can find the best paying job with the best working Environment
+      </p>
       {jobs.map((job) => (
         <JobCard key={job.id} job={job} />
       ))}
