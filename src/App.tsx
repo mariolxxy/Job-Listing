@@ -87,9 +87,9 @@ const JobCard: React.FC<{ job: JobProps }> = ({ job }) => {
   return (
     <div
       style={{
-        width: "80%",
+        width: "50%",
         border: "1px solid #ddd",
-        padding: "16px 500px 16px 16px",
+        padding: "16px 400px 16px 16px",
         borderRadius: "8px",
         boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.1)",
         marginLeft: "5%",
